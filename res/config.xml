@@ -15,7 +15,7 @@ p, li { white-space: pre-wrap; }
             <cDefine>NO_OF_CELLS_SERIES</cDefine>
             <editorScale>1</editorScale>
             <editAsPercentage>0</editAsPercentage>
-            <maxInt>180</maxInt>
+            <maxInt>360</maxInt>
             <minInt>3</minInt>
             <showDisplay>0</showDisplay>
             <stepInt>1</stepInt>
@@ -23,26 +23,6 @@ p, li { white-space: pre-wrap; }
             <suffix></suffix>
             <vTx>1</vTx>
         </noOfCellsSeries>
-        <noOfCellsParallel>
-            <longName>Cells in parallel</longName>
-            <type>2</type>
-            <transmittable>1</transmittable>
-            <description>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'DejaVu Sans'; ; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Number of cells in parallel (used for future SoC algorithm).&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</description>
-            <cDefine>NO_OF_CELLS_PARALLEL</cDefine>
-            <editorScale>1</editorScale>
-            <editAsPercentage>0</editAsPercentage>
-            <maxInt>200</maxInt>
-            <minInt>1</minInt>
-            <showDisplay>0</showDisplay>
-            <stepInt>1</stepInt>
-            <valInt>10</valInt>
-            <suffix></suffix>
-            <vTx>1</vTx>
-        </noOfCellsParallel>
         <noOfParallelModules>
             <longName>Parallel modules count</longName>
             <type>2</type>
@@ -55,7 +35,7 @@ p, li { white-space: pre-wrap; }
             <cDefine>NO_OF_PARALLEL_MODULE</cDefine>
             <editorScale>1</editorScale>
             <editAsPercentage>0</editAsPercentage>
-            <maxInt>10</maxInt>
+            <maxInt>20</maxInt>
             <minInt>1</minInt>
             <showDisplay>0</showDisplay>
             <stepInt>1</stepInt>
@@ -113,7 +93,7 @@ p, li { white-space: pre-wrap; }
             <cDefine>CELL_MONITOR_IC_COUNT</cDefine>
             <editorScale>1</editorScale>
             <editAsPercentage>0</editAsPercentage>
-            <maxInt>10</maxInt>
+            <maxInt>30</maxInt>
             <minInt>1</minInt>
             <showDisplay>0</showDisplay>
             <stepInt>1</stepInt>
@@ -121,21 +101,6 @@ p, li { white-space: pre-wrap; }
             <suffix></suffix>
             <vTx>1</vTx>
         </cellMonitorICCount>
-        <cellTechnology>
-            <longName>Cell technology</longName>
-            <type>4</type>
-            <transmittable>1</transmittable>
-            <description>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'DejaVu Sans'; ; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Battery cell technology, used for state of charge indication.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</description>
-            <cDefine>CELL_TECHNOLOGY</cDefine>
-            <valInt>0</valInt>
-            <enumNames>Li-Ion</enumNames>
-            <enumNames>Li-Polymer</enumNames>
-            <enumNames>Li-Phosphate</enumNames>
-        </cellTechnology>
         <cellHardUnderVoltage>
             <longName>Cell hard undervoltage</longName>
             <type>1</type>
@@ -384,7 +349,7 @@ p, li { white-space: pre-wrap; }
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'DejaVu Sans'; ; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;The pack voltage data source can be selected here. For ADC's the callibration/scaling/offset values will be taken into account, for CAN based sensors the measured voltage will be used directly from the CAN sensor.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</description>
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;The pack voltage data source can be selected here. For ISL28022 the callibration/scaling/offset values will be taken into account, for CAN based sensors the measured voltage will be used directly from the CAN sensor.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</description>
             <cDefine>PACK_VOLTAGE_DATA_SOURCE</cDefine>
             <valInt>1</valInt>
             <enumNames>NoSource</enumNames>
@@ -401,14 +366,14 @@ p, li { white-space: pre-wrap; }
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'DejaVu Sans'; ; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;The pack current data source can be selected here. For ADC's the callibration/scaling/offset values will be taken into account, for CAN based sensors the measured voltage will be used directly from the CAN sensor.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</description>
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;The pack current data source can be selected here. For ISL28022 the callibration/scaling/offset values will be taken into account, for CAN based sensors the measured voltage will be used directly from the CAN sensor.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</description>
             <cDefine>CELL_MONITOR_IC_TYPE</cDefine>
             <valInt>1</valInt>
             <enumNames>NoSource</enumNames>
             <enumNames>ISL28022 (I2C)</enumNames>
             <enumNames>CAN-&gt;ENNOID-Shunt</enumNames>
             <enumNames>CAN-&gt;Isabellenhutte</enumNames>
-            <enumNames>CAN-&gt;VESC</enumNames>
+            <enumNames>CAN-&gt;VESC (Discharge), ISL28022 (Charge)</enumNames>
         </packCurrentDataSource>
         <buzzerSignalSource>
             <longName>Signal source</longName>
@@ -457,7 +422,7 @@ p, li { white-space: pre-wrap; }
             <valInt>0</valInt>
         </buzzerPersistent>
         <shuntLCFactor>
-            <longName>Shunt LC factor</longName>
+            <longName>Shunt factor</longName>
             <type>1</type>
             <transmittable>1</transmittable>
             <description>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
@@ -469,11 +434,11 @@ p, li { white-space: pre-wrap; }
             <editorDecimalsDouble>6</editorDecimalsDouble>
             <editorScale>1</editorScale>
             <editAsPercentage>0</editAsPercentage>
-            <maxDouble>1</maxDouble>
-            <minDouble>-1</minDouble>
+            <maxDouble>10</maxDouble>
+            <minDouble>-10</minDouble>
             <showDisplay>0</showDisplay>
-            <stepDouble>0.05</stepDouble>
-            <valDouble>-0.0052</valDouble>
+            <stepDouble>0.01</stepDouble>
+            <valDouble>1</valDouble>
             <vTxDoubleScale>100000</vTxDoubleScale>
             <suffix></suffix>
             <vTx>9</vTx>
@@ -536,8 +501,8 @@ p, li { white-space: pre-wrap; }
             <maxDouble>200</maxDouble>
             <minDouble>-200</minDouble>
             <showDisplay>0</showDisplay>
-            <stepDouble>0.05</stepDouble>
-            <valDouble>124</valDouble>
+            <stepDouble>0.01</stepDouble>
+            <valDouble>1</valDouble>
             <vTxDoubleScale>100000</vTxDoubleScale>
             <suffix></suffix>
             <vTx>9</vTx>
@@ -578,8 +543,8 @@ p, li { white-space: pre-wrap; }
             <maxDouble>500</maxDouble>
             <minDouble>-500</minDouble>
             <showDisplay>0</showDisplay>
-            <stepDouble>0.05</stepDouble>
-            <valDouble>135</valDouble>
+            <stepDouble>0.01</stepDouble>
+            <valDouble>1</valDouble>
             <vTxDoubleScale>100000</vTxDoubleScale>
             <suffix></suffix>
             <vTx>9</vTx>
@@ -622,8 +587,8 @@ p, li { white-space: pre-wrap; }
             <maxDouble>500</maxDouble>
             <minDouble>-500</minDouble>
             <showDisplay>0</showDisplay>
-            <stepDouble>0.05</stepDouble>
-            <valDouble>135</valDouble>
+            <stepDouble>0.01</stepDouble>
+            <valDouble>1</valDouble>
             <vTxDoubleScale>100000</vTxDoubleScale>
             <suffix></suffix>
             <vTx>9</vTx>
@@ -1332,7 +1297,7 @@ p, li { white-space: pre-wrap; }
             <maxDouble>10</maxDouble>
             <minDouble>0</minDouble>
             <showDisplay>0</showDisplay>
-            <stepDouble>0.1</stepDouble>
+            <stepDouble>0.01</stepDouble>
             <valDouble>0.5</valDouble>
             <vTxDoubleScale>100000</vTxDoubleScale>
             <suffix>A</suffix>
@@ -1400,21 +1365,6 @@ p, li { white-space: pre-wrap; }
             <suffix>ms</suffix>
             <vTx>5</vTx>
         </stateOfChargeStoreInterval>
-        <stateOfChargeMethod>
-            <longName>State of charge method</longName>
-            <type>4</type>
-            <transmittable>1</transmittable>
-            <description>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'DejaVu Sans'; ; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;The state of charge estimation method the BMS should use. Please note that cell voltage lookup is not yet implemented&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</description>
-            <cDefine>CELL_SOC_METHOD</cDefine>
-            <valInt>1</valInt>
-            <enumNames>None</enumNames>
-            <enumNames>Coulomb counting</enumNames>
-            <enumNames>Coulomb counting + Cell Voltage lookup</enumNames>
-        </stateOfChargeMethod>
         <CANID>
             <longName>CAN ID</longName>
             <type>2</type>
@@ -1744,6 +1694,25 @@ p, li { white-space: pre-wrap; }
             <enumNames>SI-7020 / SHT21</enumNames>
             <enumNames>HTC1080</enumNames>
         </humidityICType>
+        <cellTypeUsed>
+            <longName>Cell type</longName>
+            <type>4</type>
+            <transmittable>1</transmittable>
+            <description>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'DejaVu Sans'; ; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Cell type used. Initial SOC is determined by cell type.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</description>
+            <cDefine>CELL_TYPE_USED</cDefine>
+            <valInt>1</valInt>
+            <enumNames>Generic_Li-Ion</enumNames>
+            <enumNames>AMS_18650_2500mAh</enumNames>
+            <enumNames>MOLICEL_21700_P42A</enumNames>
+            <enumNames>MOLICEL_18650_P28A</enumNames>
+            <enumNames>PANASONIC_18650_GA</enumNames>
+            <enumNames>PANSONIC_18650_BD</enumNames>
+            <enumNames>SAMSUNG_30Q</enumNames>
+        </cellTypeUsed>
         <LCUseDischarge>
             <longName>Discharge output</longName>
             <type>4</type>
@@ -1932,7 +1901,7 @@ p, li { white-space: pre-wrap; }
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'DejaVu Sans'; ; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;The HC load voltage data source can be selected here. For ADC's the callibration/scaling/offset values will be taken into account, for CAN based sensors the measured voltage will be used directly from the CAN sensor.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</description>
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;The HC load voltage data source can be selected here. For ISL28022 the callibration/scaling/offset values will be taken into account, for CAN based sensors the measured voltage will be used directly from the CAN sensor.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</description>
             <cDefine>HC_LOAD_VOLTAGE_DATA_SOURCE</cDefine>
             <valInt>0</valInt>
             <enumNames>NoSource</enumNames>
@@ -1953,7 +1922,7 @@ p, li { white-space: pre-wrap; }
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'DejaVu Sans'; ; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;The HC load voltage data source can be selected here. For ADC's the callibration/scaling/offset values will be taken into account, for CAN based sensors the measured voltage will be used directly from the CAN sensor.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</description>
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;The HC load voltage data source can be selected here. For ISL28022 the callibration/scaling/offset values will be taken into account, for CAN based sensors the measured voltage will be used directly from the CAN sensor.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</description>
             <cDefine>HC_LOAD_VOLTAGE_DATA_SOURCE</cDefine>
             <valInt>0</valInt>
             <enumNames>NoSource</enumNames>
@@ -2516,7 +2485,6 @@ p, li { white-space: pre-wrap; }
     </Params>
     <SerOrder>
         <ser>noOfCellsSeries</ser>
-        <ser>noOfCellsParallel</ser>
         <ser>noOfParallelModules</ser>
         <ser>batteryCapacity</ser>
         <ser>cellHardUnderVoltage</ser>
@@ -2576,7 +2544,6 @@ p, li { white-space: pre-wrap; }
         <ser>notUsedCurrentThreshold</ser>
         <ser>notUsedTimeout</ser>
         <ser>stateOfChargeStoreInterval</ser>
-        <ser>stateOfChargeMethod</ser>
         <ser>CANID</ser>
         <ser>CANIDStyle</ser>
         <ser>CANBaudRate</ser>
@@ -2610,6 +2577,7 @@ p, li { white-space: pre-wrap; }
         <ser>chargeEnableState</ser>
         <ser>powerDownDelay</ser>
         <ser>humidityICType</ser>
+        <ser>cellTypeUsed</ser>
 
     </SerOrder>
 </ConfigParams>

@@ -1,3 +1,21 @@
+=== FW 6.00 ===
+* SOC tracking now use lowest cell voltage instead of current tracking
+
+=== FW 5.05 ===
+* New SOC algorithm based on combined cell voltage and current tracking
+* Refactored setting values for voltages and current monitoring (default is now 1.000)
+* Temperature sensor count can now be set to 0, 1, 2.
+* New configuration options for NTC25 deg resistance and BETA factor
+* Improved CAN bus data transfer
+* Enable/disable charging is now functional in VESC tool
+
+=== FW 5.04 ===
+
+* Elcon charger automatic detection
+* Power button can restart the BMS when in shutdown
+* Separate charge & discharge in VESC tool (BMS IC vs input current)
+* Wh & Ah counters are now more inline with VESC BMS
+
 === FW 5.03 ===
 * Added Ah & Wh counters
 * New parameter : Adjustable CAN-bus charging current limit

@@ -49,7 +49,7 @@ void PageMasterSignals::setDieBieMS(BMSInterface *dieBieMS)
     mDieBieMS = dieBieMS;
 
     if (mDieBieMS) {
-        ui->signalsTab->addRowSeparator(tr("Discharge Current"));
+        ui->signalsTab->addRowSeparator(tr("Current"));
         ui->signalsTab->addParamRow(mDieBieMS->bmsConfig(), "shuntLCFactor");
         ui->signalsTab->addRowSeparator(tr("Pack voltage"));
         ui->signalsTab->addParamRow(mDieBieMS->bmsConfig(), "voltageLCFactor");

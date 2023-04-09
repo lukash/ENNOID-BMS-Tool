@@ -250,7 +250,7 @@ void PageFirmware::on_uploadButton_clicked()
                 if (ui->hwList->count() == 0) {
                     QMessageBox::warning(this,
                                          tr("Upload Error"),
-                                         tr("This version of DieBie does not include any firmware "
+                                         tr("This version of ENNOID-BMS does not include any firmware "
                                             "for your hardware version. You can either "
                                             "upload a custom file or look for a later version of ENNOID-BMS "
                                             "Tool that might support your hardware."));
